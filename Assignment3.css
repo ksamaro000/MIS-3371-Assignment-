@@ -1,0 +1,22 @@
+body {
+    background: lightblue;
+}
+ 
+h1 {
+    color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+}
+ 
+.date {
+    color: pink;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.p1 {
+    color: pink;
+    margin-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
