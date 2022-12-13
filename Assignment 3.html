@@ -240,6 +240,52 @@ document.getElementById("current_date").innerHTML = Date();
                    <input type="text" UserID="User ID" placeholder="User ID" />
                  </div>
                </div>
+		     
+		  <script>
+	          function validator() {
+	              var pw1 = document.getElementById("password").value;
+	              var pw2 = document.getElementById("password2").value;
+
+	              if(pw1 == "") {
+	                document.getElementById("message1").innerHTML = "Fill the password please!";
+	                return false;
+	              }
+
+	              if(pw2 == "") {
+	                document.getElementById("message2").innerHTML = "Enter the password please!";
+	                return false;
+	              }
+
+	              if(pw1.length < 8) {
+	                document.getElementById("message1").innerHTML = "Password length must be atleast 8 characters";
+	                return false;
+	              }
+
+	              if(pw1.length > 15) {
+	                document.getElementById("message1").innerHTML = "Password length must not exceed 15 characters";
+	                return false;
+	              }
+
+	              if(pw1 != pw2) {
+	                document.getElementById("message2").innerHTML = "**Passwords are not same";
+	                return false;
+	              } else {
+
+	              }
+	           }
+	          </script>
+	      
+	      <label for="passid">Enter a Password:</label><br>
+	      <input type="password" id="password" name="password" size="40" minlength="8" maxlength="20" 
+	                           ><span id="message1"></span>
+	
+
+	      <label for="passid2">Re-Enter your Password:</label><br>
+	      <input type="password" id="password2" name="password2" size="40" minlength="8" maxlength="20" 
+	                           onblur="validator()"><span id="message2"></span>     
+		     
+		     
+		     
                <div class="item">
                  <p>Name</p>
                  <div class="name-item">
